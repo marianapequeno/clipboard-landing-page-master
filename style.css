@@ -1,0 +1,38 @@
+
+/*CSS RESET*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+/*GENERAL STYLES*/
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+  background-color: #6b6d6c;
+  color: #f3f3f3;
+  text-align: center; 
+  padding: 10px 0;
+}
+
+.attribution a { 
+  color: #a7b7c1; 
+}
