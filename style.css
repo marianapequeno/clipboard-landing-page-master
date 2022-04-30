@@ -4,6 +4,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+body{
+  color: hsl(210, 10%, 33%);
+  font-size: 18px;
 }
 
 a{
@@ -14,9 +20,56 @@ li{
   list-style: none;
 }
 
+img{
+  display: block;
+  max-width: 100%;
+}
+
 /*GENERAL STYLES*/
 
+header{
+  background-image: url(images/bg-header-desktop.png);
+  background-size: cover;
+  margin-bottom: 50px;
+}
 
+.logo-header{
+  height: 30vh;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.logo-header img{
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
+.text-header{
+  text-align: center;
+}
+
+.buttons{
+  margin: 50px 0 50px 0;
+  display: inline-block;
+}
+
+.buttons a{
+  color: #f3f3f3;
+  box-shadow: ;
+  font-size: 0.94rem;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.buttons .ios{
+  background-color: hsl(171, 66%, 44%);
+  margin-right: 15px;
+}
+
+.buttons .android{
+  background-color: hsl(233, 100%, 69%);
+}
 
 
 
