@@ -1,15 +1,9 @@
-
-/*CSS RESET*/
+/* CSS RESET */
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Bai Jamjuree', sans-serif;
-}
-
-body{
-  color: hsl(210, 10%, 33%);
-  font-size: 18px;
 }
 
 a{
@@ -25,22 +19,47 @@ img{
   max-width: 100%;
 }
 
-/*GENERAL STYLES*/
+/* GENERAL STYLES */
+body{
+  color: hsl(210, 10%, 33%);
+  font-size: 1.125rem;
+}
 
+.container{
+  max-width: 1520px;
+  margin: auto;
+}
+
+.title-2{
+  text-align: center;
+  margin-bottom: 1.125rem;
+}
+
+.paragraph{
+  opacity: .6;
+  font-size: 0.9375rem;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 60ch;
+  margin: auto;
+}
+
+/* HEADER */
 header{
   background-image: url(images/bg-header-desktop.png);
   background-size: cover;
-  margin-bottom: 50px;
+  padding: 1.25rem;
+  margin-bottom: 3.125rem;
 }
 
 .logo-header{
   height: 30vh;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 1.125rem;
+  padding-bottom: 0.625rem;
 }
 
 .logo-header img{
-  padding-top: 30px;
+  padding-top: 1.875rem;
   margin: 0 auto;
 }
 
@@ -48,44 +67,213 @@ header{
   text-align: center;
 }
 
+@media (max-width: 600px){
+  .title-1{
+    font-size: 1.5625rem;
+  }
+}
+
 .buttons{
-  margin: 50px 0 50px 0;
-  display: inline-block;
+  margin: 3.125rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.125rem;
+  justify-content: center;
 }
 
 .buttons a{
   color: #f3f3f3;
-  box-shadow: ;
-  font-size: 0.94rem;
-  font-weight: 600;
-  border-radius: 20px;
-  padding: 10px;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+  font-size: 0.875rem;
+  font-weight: bold;
+  letter-spacing: 0.0625rem;
+  border-radius: 35px;
+  padding: 0.9375rem 1.875rem;
 }
 
 .buttons .ios{
   background-color: hsl(171, 66%, 44%);
-  margin-right: 15px;
 }
 
-.buttons .android{
+.buttons .mac{
   background-color: hsl(233, 100%, 69%);
 }
 
+/* MAIN */
+.main{
+  padding: 1.25rem;
+}
 
+.div-text-main{
+  margin: 7.5rem 0;
+}
 
+.container-section1{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.125rem;
+}
 
+.div-container-img1-section1 img{
+  position: relative;
+  left: -3.125rem;
+}
 
+.ul-text-section1{
+  align-self: center;
+  padding-bottom: 3.125rem;
+  display: grid;
+  gap: 5.625rem;
+}
 
+@media(max-width: 1181px){
+  .ul-text-section1{
+    text-align: center;
+    margin: auto;
+  }
+}
 
+.ul-text-section1 .paragraph{
+  text-align: left;
+  max-width: 35ch;
+}
 
+.div-container-img2-main img{
+  margin: auto;
+}
+
+.list2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.875rem;
+}
+
+.list2 p{
+  max-width: 35ch;
+}
+
+.list2 img{
+  margin: auto;
+}
+
+.title-3{
+  text-align: center;
+  margin: 1.875rem 0;
+}
+
+.container-section3{
+  margin: 7.5rem 0;
+}
+
+.div-container-logos-section3{
+  margin-bottom: 7.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3.125rem;
+}
+
+/* FOOTER */
+.footer{
+  background-color: #f3f3f3;
+}
+
+.footer .nav-container-footer{
+  padding: 3.125rem 0.625rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: space-around;
+}
+
+@media(max-width: 870px){
+  .footer .nav-container-footer{
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+}
+
+.div-container-img-footer img{
+  max-width: 50px;
+
+}
+
+.div-container-a-footer{
+  justify-self: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.625rem 1.875rem;
+}
+
+@media(max-width: 870px){
+  .div-container-a-footer{
+    grid-template-columns: 1fr;
+    gap: 1.875rem;
+    justify-items: center;
+  }
+}
+
+.div-container-a-footer a{
+  color: #6b6d6c;
+  font-size: 1rem;
+  padding: 0 1.25rem;
+}
+
+.div-container-a-footer .contact{
+  grid-row: 2;
+}
+
+.div-container-a-footer .press-kit{
+  grid-row: 2;
+}
+
+@media(max-width: 870px){
+  .div-container-a-footer .contact, 
+  .div-container-a-footer .press-kit{
+    grid-row: initial;
+  }
+}
+
+.div-container-icons-footer{
+  display: flex;
+  align-items: center;
+  gap: 0.9375rem;
+}
 
 .attribution {
   background-color: #6b6d6c;
-  color: #f3f3f3;
+  color: #f3f3f3;font-size: 1rem;
   text-align: center; 
-  padding: 10px 0;
+  padding: 0.625rem;
 }
 
 .attribution a { 
   color: #a7b7c1; 
 }
+
+/* MEDIA QUERIES */
+@media(max-width: 375px) {
+  .buttons a{
+    text-align: center;
+    width: 270px;
+    display: block;
+  }
+}
+
+/* BREAKPOINTS: 
+
+max-width: 375  
+ .buttons a
+
+max-width: 600px
+ .title-1
+
+max-width: 870px: 
+ .footer .nav-container-footer
+ .div-container-a-footer
+ .div-container-a-footer .contact, 
+ .div-container-a-footer .press-kit
+*/
