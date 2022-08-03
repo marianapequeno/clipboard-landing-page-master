@@ -1,4 +1,4 @@
-# Frontend Mentor - Clipboard landing page
+# Clipboard Landing Page
 
 Desafio do [Frontend Mentor](https://www.frontendmentor.io)
 
